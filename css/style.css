@@ -1,0 +1,39 @@
+:root {
+    --light_grey: #a5a8a9;
+    --dark_grey: #636b70;
+    --red: #cf142b;
+    --light_blue: #00ffff;
+    --purple: #5214cf;
+  }
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    box-sizing: border-box;
+    background-color: black;
+}
+.container{
+  width: 100%;
+  max-width: 2000px;
+  margin: auto;
+}
+
+
+/*::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+  border-radius: 10px;
+  background-color: var(--dark_grey);
+}
+::-webkit-scrollbar{
+  width: 1vmin;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background: rgb(82,20,207);
+  background: linear-gradient(90deg, rgba(82,20,207,1) 20%, var(--light_blue) 50%, rgba(82,20,207,1) 80%);
+}*/

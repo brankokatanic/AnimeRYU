@@ -1,0 +1,315 @@
+.main_menu{
+    position: relative;
+    height: 60px;
+    width: 100%;
+    background-color: black;
+}
+.main_menu_underline{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+    background: linear-gradient(to right, var(--light_grey) 0%, #5214cf 100%);
+}
+.main_menu_image{
+    position: absolute;
+    height: 100%;
+    width: 110px;
+    left: 0px;
+    right: calc(100% - 110px);
+}
+.main_menu_image_1 img{
+    height: 50px;
+    max-height: 100%;
+    padding: 5px;
+}
+.main_menu_image_2{
+    display: none;
+}
+
+
+
+.searchbox{
+  position: absolute;
+  height: 60px;
+  width: calc(100% - 170px);
+  left: 110px;
+  right: 60px;
+  background-color: black;
+}
+.open_search_mobile{
+  float: right;
+  height: 60px;
+  width: 60px;
+  background-color: transparent;
+  border: none;
+}
+.open_search_mobile i{
+  text-decoration: none;
+  font-size: 35px; 
+  color: var(--light_grey);
+}
+.open_search_mobile i:hover{
+  color: var(--dark_grey);
+}
+
+.search_mobile{
+  position: relative;
+  display: none;
+  height: 50px;
+  width: 100%;
+  max-width: 2000px;
+  margin: auto;
+  background: var(--purple);
+}
+.search_mobile button{
+  position: absolute;
+  height: 100%;
+  width: 50px;
+  top: 0px;
+  right: 0px;
+  background: transparent;
+  border: none;
+  outline:none;
+}
+.search_mobile button i{
+  text-decoration: none;
+  font-size: 35px; 
+  color: var(--light_grey);
+}
+.search_mobile button i:hover{
+  color: var(--dark_grey);
+}
+.search_mobile form{
+  position: relative;
+  height: 50px;
+  width: calc(100% - 55px);
+}
+.search_mobile form input{
+  position: relative;
+  height: 50px;
+  width: calc(100% - 60px);
+  padding-left: 10px;
+  background: var(--purple);
+  border: none;
+  outline:none;
+  font-size: 20px;
+  color: white;
+}
+.search_mobile form button{
+  position: absolute;
+  height: 100%;
+  width: 50px;
+  right: 0px;
+  background: transparent;
+  border: none;
+  outline:none;
+}
+.search_mobile form button i{
+  text-decoration: none;
+  font-size: 35px; 
+  color: var(--light_grey);
+}
+
+
+.autocomplete {
+    position: relative;
+    display: inline-block;
+    width: calc(100% + 55px);
+}  
+.autocomplete-items {
+    position: absolute;
+    border-bottom: none;
+    border-top: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+}  
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    color: var(--dark_grey);
+    background-color: var(--light_grey); 
+} 
+  /*when hovering an item:*/
+.autocomplete-items div:hover {
+    background-color: var(--purple); 
+}  
+  /*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+}
+
+
+.main_menu_buttons{
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  left: calc(100% - 60px);
+  right: 0px;
+  overflow: hidden;
+  background-color: black;
+}
+.main_menu_buttons div{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: right;
+}
+.main_menu_buttons div button{
+  height: 60px;
+  width: 60px;
+  background-color: transparent;
+  border: none;
+}
+.main_menu_buttons div button i{
+  text-decoration: none;
+  font-size: 40px; 
+  color: var(--light_grey);
+}
+.main_menu_buttons div button i:hover{
+  color: var(--dark_grey);
+}
+.main_menu_buttons .close_header_menu{
+  display: none;
+}
+
+
+.main_menu_dropdown{
+  position: relative;
+  display: none;
+  width: 100%;
+  max-width: 2000px;
+  margin: auto;
+  background: rgb(82,20,207);
+  background: linear-gradient(180deg, rgba(82,20,207,1) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 75%, rgba(82,20,207,1) 100%);
+}
+.main_menu_dropdown ul{
+  list-style-type: none;
+}
+.main_menu_dropdown ul li{
+  width: 100%;
+  max-width: 2000px;
+  list-style-type: none;
+  text-align: center;
+}
+.main_menu_dropdown ul li a{
+  width: 100%;
+  max-width: 2000px;
+  color: var(--light_grey);
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 30px;
+}
+.main_menu_dropdown ul li a i{
+  position: relative;
+  top: 5px;
+}
+.main_menu_dropdown ul li a:hover{
+  color: var(--dark_grey);
+}
+
+@media screen and (min-width: 600px){
+  .main_menu_image{
+    position: absolute;
+    height: 100%;
+    width: 290px;
+    left: 0px;
+    right: calc(100% - 290px);
+  }
+  .main_menu_image_1{
+    display: none;
+  }
+  .main_menu_image_2{
+    display: block;
+  }
+  .main_menu_image_2 img{
+    height: 50px;
+    max-height: 100%;
+    padding: 5px;
+  }
+  .searchbox{
+    position: absolute;
+    height: 60px;
+    width: calc(100% - 470px);
+    left: 290px;
+    right: 180px;
+  }
+  .main_menu_buttons{
+    position: absolute;
+    height: 60px;
+    width: 180px;
+    left: calc(100% - 180px);
+    right: 0px;
+  }
+  .main_menu_buttons .social_media{
+    display: inline-block;
+  }
+  .header_menu_dropdown_social_media{
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 1100px){
+  .searchbox form{
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: linear-gradient(to right, var(--light_grey) 0%, #5214cf 100%);
+    border-radius: 50px;
+  }
+  .searchbox form div input{
+    position: relative;
+    height: 50px;
+    width: calc(100% - 60px);
+    padding-left: 10px;
+    left: 0px;
+    right: 50px;
+    font-size: 20px;
+    background: transparent;
+    color: black;
+    border: none;
+    outline: none;
+  }
+  .searchbox form button{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    padding-left: 10px;
+    left: calc(100% - 50px);
+    right: 0px;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  .searchbox form button i{
+    text-decoration: none;
+    font-size: 30px; 
+    color: var(--light_grey);
+  }
+  .searchbox form button i:hover{
+    color: var(--dark_grey);
+  }
+
+  .autocomplete {
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 25px);
+}  
+  .autocomplete-items{
+    left: 25px;
+  }
+}
